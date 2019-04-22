@@ -11,6 +11,14 @@
 	</parent>
 
 	<artifactId>codesync-server</artifactId>
-	<packaging>jar</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>de.prokyo.network</groupId>
+			<artifactId>prokyo-net-server</artifactId>
+			<version>0.1</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
 
 </project>
