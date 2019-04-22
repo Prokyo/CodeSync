@@ -8,6 +8,7 @@
 	<artifactId>codesync</artifactId>
 	<version>1.0</version>
 	<description>IDE plugin for synchronizing code live between different machines.</description>
+	<packaging>pom</packaging>
 	<url>#TODO</url>
 
 	<licenses>
