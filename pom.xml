@@ -25,6 +25,9 @@
 
 	<modules>
 		<module>frontend</module>
+		<module>server</module>
+		<module>client</module>
+		<module>common</module>
 	</modules>
 
 	<dependencies>
