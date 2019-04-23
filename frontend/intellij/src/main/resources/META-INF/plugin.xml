@@ -1,0 +1,54 @@
+<idea-plugin>
+	<id>net.prokyo.codesync</id>
+	<name>CodeSync</name>
+	<version>1.0</version>
+	<vendor email="microsamp2019@gmail.com" url="https://github.com/Prokyo/CodeSync">Prokyo</vendor>
+
+	<description><![CDATA[
+      IDE plugin for synchronizing code live between different machines.
+    ]]></description>
+
+	<change-notes><![CDATA[
+      <ul>
+      	<li>yooooooooooooooooooooooooooooooooooooooooooooooooooooo</li>
+      	<li>Basic application</li>
+      </ul>
+    ]]>
+	</change-notes>
+
+	<!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+	<idea-version since-build="173.0"/>
+
+	<!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+		 on how to target different products -->
+	<!-- uncomment to enable plugin in all products
+	<depends>com.intellij.modules.lang</depends>
+	-->
+
+	<extensions defaultExtensionNs="com.intellij">
+		<!-- Add your extensions here -->
+	</extensions>
+
+	<!-- Plugin's project components -->
+	<project-components>
+		<component>
+			<interface-class>net.prokyo.codesync.frontend.intellij.FileChangeListener</interface-class>
+			<implementation-class>net.prokyo.codesync.frontend.intellij.FileChangeListener</implementation-class>
+			<loadForDefaultProject/>
+		</component>
+	</project-components>
+
+	<actions>
+		<!-- Add your actions here -->
+		<!--<action
+				id="Test"
+				class="net.prokyo.codesync.frontend.intellij.WriteListener"
+				text="Test"
+				description="Test">
+			<add-to-group group-id="EditorActions" achnor="after"/>
+			<add-to-group group-id="EditorGutterPopupMenu" achnor="after"/>
+			<add-to-group group-id="UsageView.Popup" achnor="after"/>
+		</action> -->
+	</actions>
+
+</idea-plugin>

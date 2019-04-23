@@ -1,0 +1,25 @@
+plugins {
+    id "org.jetbrains.intellij" version "0.4.7"
+    id "com.github.ManifestClasspath" version "0.1.0-RELEASE"
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.jetbrains.intellij'
+
+sourceCompatibility = 1.8
+
+intellij {
+    sandboxDirectory = "$project.buildDir/sandbox"
+    version 'IC-2016.3' //IntelliJ IDEA 2016.3 dependency; for a full list of IntelliJ IDEA releases please see https://www.jetbrains.com/intellij-repository/releases
+    plugins 'coverage' //Bundled plugin dependencies
+    pluginName 'CodeSync'
+}
+
+group 'net.prokyo.codesync'
+version '1.0' // Plugin version
